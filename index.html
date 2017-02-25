@@ -161,13 +161,13 @@
           </div>
  <a name="description"></a>          
           <h2 class="headline">What are we talking about?</h2>
-          <p>Experimental fields typically exhibit a strong  bias towards publications with positive results, and computer vision is not an exception. However, negative or inconclusive results are considered fundamental in advancement of the science. A prominent example of a negative result is by the  Michelson-Morley experiment~\cite{michelson1887relative}. The experiment was originally expected to detect a certain velocity of the earth relative to the postulated luminiferous aether. However, the experiment failed to do so and this negative finding had a crucial contribution in development of special relativity by Einstein.</p>
+          <p>Experimental fields typically exhibit a strong  bias towards publications with positive results, and computer vision is not an exception. However, negative or inconclusive results are considered fundamental in advancement of the science. A prominent example of a negative result is by the <a href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment">Michelson-Morley experiment</a>. The experiment was originally expected to detect a certain velocity of the earth relative to the postulated luminiferous aether. However, the experiment failed to do so and this negative finding had a crucial contribution in development of special relativity by Einstein.</p>
 
 <br>
 
           <h2 class="headline">What is a negative result?</h2>
           <p>
-          One general form of a positive statement is ``\emph{idea X works for problem Y}". A negative statement has the counter form ``\emph{idea X does not work and may never work for problem Y}". Most of our research findings and publications in computer vision have the latter form, though the former negative statement is also valuable in steering our mindsets in the right direction (see Section~\ref{sec:others} for examples from other fields). Although, it is hard to provide a concrete definition of a negative result in computer vision, we think it is important to restrict the definition to a small subset which we can effectively discuss and utilize for reaching useful conclusions. Hence, we give some examples of negative results:</p>
+          One general form of a positive statement is "<i>idea X works for problem Y</i>". A negative statement has the counter form "<i>idea X does not work and may never work for problem Y</i>". Most of our research findings and publications in computer vision have the latter form, though the former negative statement is also valuable in steering our mindsets in the right direction (see below for examples from other fields). Although, it is hard to provide a concrete definition of a negative result in computer vision, we think it is important to restrict the definition to a small subset which we can effectively discuss and utilize for reaching useful conclusions. Hence, we give some examples of negative results:</p>
 
 <p>
 <b> Conclusive Negative Results:</b> 
@@ -176,20 +176,18 @@ Researchers generate a large number of novel and interesting ideas. Only a subse
 
 </p>
 <b> Limits of Algorithms:</b> 
-In computer vision, we make many assumptions while designing our algorithms. Some of these assumptions are grounded in observations and some are primarily to make the problem computationally tractable. We generally apply these algorithms to some set of domains to obtain conclusive experimental results. Typically, if the set of images we are interested is $D_\text{cv}$, our problem definition constitutes a smaller domain $D_\text{assume}$ and our experiments are done on even smaller domain $D_\text{exp}$. Generally speaking; $D_\text{exp} \subset D_{assume} \subset D_\text{cv}$. Hence, it is an open problem to observe the applicability of results beyond the experimental setup described in the literature. We are interested in negative results that show the limitations of existing approaches on interesting domains.
+In computer vision, we make many assumptions while designing our algorithms. Some of these assumptions are grounded in observations and some are primarily to make the problem computationally tractable. We generally apply these algorithms to some set of domains to obtain conclusive experimental results. Typically, if the set of images we are interested is D<sub>cv</sub>, our problem definition constitutes a smaller domain D<sub>assume</sub> and our experiments are done on even smaller domain D<sub>exp</sub>. Generally speaking; D<sub>exp</sub> &#8834 D<sub>assume</sub> &#8834 D<sub>cv</sub>. Hence, it is an open problem to observe the applicability of results beyond the experimental setup described in the literature. We are interested in negative results that show the limitations of existing approaches on interesting domains.
 </p>
 
 <p>
 <b> Negative results on metrics and datasets:</b> 
-Ronald Coase once said \emph{``If you torture the data long enough, it will confess (to anything)''}.  It is very valuable to rigorously explore the limitations of metrics and datasets. For example, getting a real problem and showing that a metric or dataset only reaches inconclusive results has a high value for the field. Since various benchmarks do not separate the effect of algorithm and its engineering, it should be interesting to understand whether one was limited by engineering or the algorithm.
-%see conclusive results on: \emph{is our conclusions because of engineering or algorithms?}
+Ronald Coase once said "<i>If you torture the data long enough, it will confess (to anything)</i>".  It is very valuable to rigorously explore the limitations of metrics and datasets. For example, getting a real problem and showing that a metric or dataset only reaches inconclusive results has a high value for the field. Since various benchmarks do not separate the effect of algorithm and its engineering, it should be interesting to understand whether one was limited by engineering or the algorithm.
 </p>
 
 <p>
 <b>High-level lessons from the past:</b> 
 research ideas that once were presumed to be promising but are now considered incorrect. There should be a factor of surprise in such observations and we invite researchers who can explain the reasoning that brought our community to this understanding.
 %We expect the lessons to be beyond common sense though and a factor of surprised should be there. We want to invite researchers who will explain why it was surprising and how did we reach to the common sense understanding.
-\end{itemize}.
 </p>
 <br>
 
@@ -197,9 +195,9 @@ research ideas that once were presumed to be promising but are now considered in
 
           <h2 class="headline">Do we  have meaningful negative results in computer vision?</h2>
           <p>
-          We believe we do. In recent years, we have seen many similar algorithms independently proposed by different researchers showing that we often have similar ideas. Given the fact that many of these ideas  fail, disseminating the lessons from such failures will save the community a lot of time and resources. The key is appropriately incentivizing the sharing of \emph{conclusive} negative results. 
+          We believe we do. In recent years, we have seen many similar algorithms independently proposed by different researchers showing that we often have similar ideas. Given the fact that many of these ideas  fail, disseminating the lessons from such failures will save the community a lot of time and resources. The key is appropriately incentivizing the sharing of <i>conclusive</i> negative results. 
 
-One concern could be that in computer vision, there are many parameters that contribute to a problem, and therefore, it is cumbersome to provide conclusive negative results if a particular idea fails. That is because it is computationally intractable to conduct an exhaustive search over the parameter space to identify the particular factors contributing to a given failure. While this concern is partially true, we believe that experimental designs specifically targeted at evaluating a negative hypothesis can alleviate this issue. For instance, by 2013, it had been commonly observed that HOG features failed on certain detection problems; but the HOGgles~\cite{vondrick2013hoggles} paper convincingly demonstrated how HOG features were ill-suited to certain tasks.
+One concern could be that in computer vision, there are many parameters that contribute to a problem, and therefore, it is cumbersome to provide conclusive negative results if a particular idea fails. That is because it is computationally intractable to conduct an exhaustive search over the parameter space to identify the particular factors contributing to a given failure. While this concern is partially true, we believe that experimental designs specifically targeted at evaluating a negative hypothesis can alleviate this issue. For instance, by 2013, it had been commonly observed that HOG features failed on certain detection problems; but the <a href="http://web.mit.edu/vondrick/ihog/">HOGgles</a> paper convincingly demonstrated how HOG features were ill-suited to certain tasks.
 
 We are also open to hearing the other side of this argument, i.e., only positive results are valuable, during the panel discussions in the workshop. We specifically plan to invite people who believe that only positive results should be incentivized to participate in our panel discussions. If this brings us agreement that negative results should not be part of computer vision discussions, then at least that will be our first negative result!
 </p>
