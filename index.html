@@ -26,7 +26,6 @@
 <meta name="twitter:site" content="@TwitterHandle" />
 <meta name="twitter:title" content="Title for Twitter" />
 <meta name="twitter:description" content="Snippet when tweet is expanded." />
-<meta name="twitter:image" content="http://stanford.edu/about/images/intro_about.jpg" />
 <link rel="publisher" href="https://plus.google.com/id# of Google+ entity associated with your department or group" />
 -->
 
@@ -114,23 +113,42 @@
           <div class="navbar-collapse collapse"> 
             <!--search box-->
             <div id="nav-search" role="search">
-              <form action="http://www.stanford.edu/search" method="get" id="search-form" accept-charset="UTF-8">
+            <!--google search box              
+            <script>
+            (function() {
+              var cx = '002291350673615393165:cyh5rblrgeg';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+          -->
+              
+
+
+            <!--stanford search box              
+              <form action="http://www.google.com/" method="get" id="search-form" accept-charset="UTF-8">
                 <h2 class="hidden">Search form</h2>
                 <label class="hidden" for="search-field">Search term</label>
                 <input name="cx" type="hidden" value="003265255082301896483:sq5n7qoyfh8">
                 <input name="cof" type="hidden" value="FORID:9">
                 <input name="ie" type="hidden" value="UTF-8">
-                <!-- replace value in next line with your site URL -->
-                <input name="as_sitesearch" type="hidden" value="www.stanford.edu">
+                <input name="as_sitesearch" type="hidden" value="negative.vision">
                 <input title="Search string" class="input-medium" placeholder="Search this site&hellip;" type="text" id="search-field" name="q" value="" size="15" maxlength="128" />
                 <button id="search-btn" type="submit" name="submit"  aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
               </form>
+            -->
+
             </div>
             <div  role="navigation">
               <div id="primary-nav">
                 <ul class="nav navbar-nav" aria-label="primary navigation">
-                  <li id="nav-home"> <a href="./">Home</a></li>
-                  <li id="nav-1"> <a href="#description">What's Negative?</a> </li>
+                  <li id="nav-home"> <a href="#description">What's "Negative"?</a></li>
+                  <li id="nav-1"> <a href="#define">Define Negative Results</a> </li>
                   <li id="nav-2"> <a href="#papers">Call for Papers</a> </li>
                   <li id="nav-3"> <a href="#">Speakers</a> </li>
                   <li id="nav-4"> <a href="#">Schedule</a> </li>
@@ -157,7 +175,6 @@
           <div id="feature-banner" class="margin-bottom-30"> <img class="img-responsive" alt="" src="assets/1-negative.png" />
             <!-- <div class="feature-caption">
               <h3>The First Workshop on Negative Results in Computer Vision. CVPR 2017.</h3>
-              <p>The Lagunita Theme is a Stanford-branded HTML theme that can be used for any Stanford-related website.</p>
             </div> -->
           </div>
  <a name="description"></a>          
@@ -165,7 +182,7 @@
           <p>Experimental fields typically exhibit a strong  bias towards publications with positive results, and computer vision is not an exception. However, negative or inconclusive results are considered fundamental in advancement of the science. A prominent example of a negative result is by the <a href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment">Michelson-Morley experiment</a>. The experiment was originally expected to detect a certain velocity of the earth relative to the postulated luminiferous aether. However, the experiment failed to do so and this negative finding had a crucial contribution in development of special relativity by Einstein.</p>
 
 <br>
-
+ <a name="define"></a>          
           <h2 class="headline">What is a negative result?</h2>
           <p>
           One general form of a positive statement is "<i>idea X works for problem Y</i>". A negative statement has the counter form "<i>idea X does not work and may never work for problem Y</i>". Most of our research findings and publications in computer vision have the latter form, though the former negative statement is also valuable in steering our mindsets in the right direction (see below for examples from other fields). Although, it is hard to provide a concrete definition of a negative result in computer vision, we think it is important to restrict the definition to a small subset which we can effectively discuss and utilize for reaching useful conclusions. Hence, we give some examples of negative results:</p>
@@ -207,7 +224,7 @@ We are also open to hearing the other side of this argument, i.e., only positive
 
 <br>
           <h2 class="headline">Negative Results in Other Fields</h2>
-          <p> The negative results and the way to publish them is still a rather controversial topics; and, did not reach to a conclusion in many fields. Although there is an agreement on the necessity of negative results, way to disseminate them is still up to debate. The open questions include should there be seperate journals and conferences or should we change the structure of existing venues. Although there is no agreement in these details, the social-sciences and bio-sciences are clearly way ahead in this discussion. They even have specialized journals like <a href="http://jnrbm.biomedcentral.com/"> Journal of Negative Results in BioMedicine</a> and <a href="http://www.jnr-eeb.org/index.php/jnr"> Journal of Negative Results in Ecology and Evolutionary Sciences </a>, <a href="http://www.arjournals.com/"> The All Results Journals</a>, and <a href="http://www.jasnh.com/"> Journal of Articles in Support of the Null Hypothesis</a>. Although we need to discuss the charecteristics of computer vision research and come-up with an effective mecanhism for utilization of negative results, the steps taken by these fields will undoubtly be an inspiration to us.</p>
+          <p> Negative results and the way to disseminate them are still rather controversial topic and have not reach a conclusion in many fields. However, certain fields, such as social-sciences and bio-sciences are clearly way ahead in this discussion. They have even developed specialized journals, e.g. <a href="http://jnrbm.biomedcentral.com/"> Journal of Negative Results in BioMedicine</a>, <a href="http://www.jnr-eeb.org/index.php/jnr"> Journal of Negative Results in Ecology and Evolutionary Sciences </a>, <a href="http://www.arjournals.com/"> The All Results Journals</a>, and <a href="http://www.jasnh.com/"> Journal of Articles in Support of the Null Hypothesis</a>. Although we need to discuss the charecteristics of computer vision research and come up with an effective mecanhism for utilization of negative results, the steps taken by these fields will undoubtly be an inspiration to us.</p>
 		  
           <p>There are also many opinion and research articles in many distinguished journals discussing the role of negative results in science like <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084896">[Assen et al]</a> and <a href="http://robotics.cs.tamu.edu/RSS2015NegativeResults/pmed.0020124.pdf">[Ioannidis]</a>.</p>
 
@@ -278,12 +295,13 @@ We are also open to hearing the other side of this argument, i.e., only positive
             </p>   
 
           </div>
+          <!-- section for sponsors or highlights 
           <div class="well">
-            <h2>In the Spotlight</h2>
+            <h2>Sponsors</h2>
             <img src="assets/Puzzle_black-white_missing-690x320.jpg" alt="" />
             <p class="caption">some caption</p>         
             <p>Perhaps sponsers</p>
-
+          -->
           </div>
         </div>
       </div>
@@ -301,8 +319,10 @@ We are also open to hearing the other side of this argument, i.e., only positive
   <div class="container">
     <div id="footer-content" class="row">
       <div class="col-xs-12 col-sm-6 col-sm-push-3">
+      <!--
         <h3>More about us</h3>
         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet lobortis libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean vitae tortor ligula, quis laoreet ante. Phasellus in turpis ac elit consectetur viverra. Praesent nec massa vitae dui facilisis venenatis et at nisi.</p>
+        -->
       </div>
       <div class="col-xs-12 col-sm-3 col-sm-push-3">
         <h3>Related Links</h3>
@@ -331,13 +351,13 @@ We are also open to hearing the other side of this argument, i.e., only positive
         <div id="bottom-text" class="col-xs-6 col-sm-10">
           <ul>
             <li class="home"><a href="http://negative.vision/">Negative Home</a></li>
-            <li class="maps alt"><a href="http://cvpr2017.thecvf.com/attend/travel" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
+            <li class="maps alt"><a href="http://cvpr2017.thecvf.com/attend/travel" class="su-link" data-ua-action="" data-ua-label="global-footer">Maps &amp; Directions</a></li>
             <li class="CVPR"><a href="http://cvpr2017.thecvf.com/">CVPR 2017</a></li>            
           </ul>
         </div>
         <!-- .bottom-text end -->
         <div class="clear"></div>
-        <p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="http://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
+        <p class="copyright vcard col-sm-10">&copy; <span class="fn org">University of California, Berkeley</span>.&nbsp; <span class="adr"> <span class="locality">Berkeley</span>, <span class="region">California</span> <span class="postal-code">94720</span></span>. <span id="termsofuse"><a href="" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
       </div>
       <!-- .row end --> 
     </div>
@@ -347,6 +367,18 @@ We are also open to hearing the other side of this argument, i.e., only positive
   
 </div>
 <!-- END footer -->
+
+<!-- tracker -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89674082-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
